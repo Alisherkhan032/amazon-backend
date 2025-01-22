@@ -19,6 +19,9 @@ const sessions = new Set();
 // app.get("/admin", async (req, res) => {
 //   res.json(users);
 // });
+app.get('/', (req, res) => {
+  res.json({message: "Hello World!"});
+});
 
 app.post("/register", async (req, res) => {
   try {
